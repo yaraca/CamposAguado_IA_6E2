@@ -8,7 +8,7 @@ print("Donde se encontraban bestias raras...\n A las que todos temían...") #sal
 print("\nY un día...")#salto de linea vacío
 print("\nUn héroe no tan valiente se enfrentó a ellas...")
 
-#dibujo de flecha con saltos de línea
+#dibujo de flechita con saltos de línea
 print("    *","\n","  * *" )
 print("  *   *", "\n", "*     *")
 print("***   ***", "\n", " *   *" )
