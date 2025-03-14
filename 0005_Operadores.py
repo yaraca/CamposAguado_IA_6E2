@@ -1,4 +1,6 @@
 #Operadores aritméticos
+#las operaciones aritméticas en python son las mismas que en matemáticas
+
 print (5+10) #suma
 print (5-10) #resta
 print (5*10.) #multiplicación ent y float = float
