@@ -1,4 +1,6 @@
 #Variables
+#Una variables es un espacio de memoria que se utiliza para almacenar un valor
+
 v = 5 #asigna el valor de 5 a la variable "v"
 dinero_cuenta = 1500
 nombre = "Yara"
