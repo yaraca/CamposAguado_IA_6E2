@@ -73,6 +73,7 @@ print ("El número mayor es: ", valor_max)
 print ()
 
 #--------------------------------------------------
+
 #Ejemplo extra: función max() y min()
 print ("Ejemplo de función max() y min()")
 num1 = int(input("Ingrese el primer número: "))
@@ -81,3 +82,49 @@ num3 = int(input("Ingrese el tercer número: "))
 print ("El número mayor es: ", max(num1, num2, num3))
 print ("El número menor es: ", min(num1, num2, num3))
 print ()
+
+#--------------------------------------------------
+
+#Ejercicio instrucciones condicionales
+#Ejercicio 1 if-elif-else
+#Flor favorita
+flor = input("Ingresa el nombre de la flor: ")
+if flor == "ESPATIFILO": #si la flor es ESPATIFILO
+    print ("¡ESPATIFILO es la mejor planta de todas!") #imprime el mensaje
+elif flor == "espatifilo": #si la flor es espatifilo
+    print ("No, ¡quiero un gran Espatifilo!") #imprime el mensaje
+else: #sino es ninguna de las anteriores
+    print ("¡Espatifilo! ¡No", flor + "!") #imprime el mensaje
+
+#--------------------------------------------------
+
+#Ejercicio instrucciones condicionales
+#Ejercicio 2 if-else
+#Calculadora de impuestos
+ingreso = float(input("Introduce el ingreso anual: "))
+if ingreso < 85528: #si el ingreso es menor a 85528
+    impuesto = (ingreso * 0.18) - 556.02 #calcula el impuesto 
+else:
+    impuesto = 14839.02 + ((ingreso - 85528)* 0.32) #calcula el impuesto
+if impuesto < 0: #si el impuesto es menor que 0
+    impuesto = 0.0 #se le asigna el valor de 0
+impuesto = round(impuesto, 0) #redondea el valor del impuesto a pesos totales
+print ("El impuesto es: ", impuesto, "pesos")
+print ()
+
+#--------------------------------------------------
+
+#Ejercicio instrucciones condicionales
+#Ejercicio 3 if-elif-else
+#Año bisiesto
+año = int(input("Introduce un año: "))
+if año < 1582: #si el año es menor qu e1582
+    print ("NO esta dentro del periodo del calendario gregoriano")
+elif año % 4 != 0: #si el año no es divisible entre 4
+    print ("Es un año común")
+elif año % 100 != 0: #si el año no es divisible entre 100
+    print ("Es un año bisiesto")
+elif año % 400 != 0: #si el año no es divisible entre 400
+    print ("Es un año común")
+else: #sino
+    print ("Es un año bisiesto")
