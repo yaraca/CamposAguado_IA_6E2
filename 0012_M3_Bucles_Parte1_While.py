@@ -10,6 +10,7 @@
 #Bucle while
 #El while se utiliza para repetir un bloque de código mientras una condición sea verdadera
 #Ejemplo bucle While
+print ("Ejemplo de bucle While")
 valor_max = -999999999
 num = int(input("Introduce un número o escribe -1 para detener: "))
 while num != -1: #mientras num sea diferente de -1
@@ -23,6 +24,7 @@ print ()
 
 #Ejemplo bucle While
 #Números pares e impares
+print ("Ejemplo numros pares e impares")
 impar = 0 
 par = 0
 num = int(input("Introduce un número o escribe 0 para detener: "))
@@ -40,6 +42,7 @@ print ()
 
 #Variable counter para salir de un bucle 
 #Ejemplo counter
+print ("Ejemplo de variable counter")
 counter = 5 #el contador es igual a 5
 while counter != 0: #mientras counter sea diferente de 0
     print ("Dentro del bucle...", counter)
@@ -51,7 +54,8 @@ print ()
 
 #Ejercicio con bucle while
 #Ejercicio 1 Número secreto 
-numero_secreto = 777
+print ("Ejemplo de número secreto")
+numero_secreto = 2828
 print(
 """
 +================================+
@@ -66,4 +70,36 @@ num = int(input("Introduce un número:"))
 while num != numero_secreto: #mientras num sea diferente de numero secreto
     print("¡Ja, ja! ¡Estás atrapado en mi ciclo!")
     num = int(input("Introduce un número:"))
-print("¡Bien hecho, muggle! Eres libre ahora")
+print("¡Bien hecho, muggle! Eres libre ahora") #cuando num sea igual a numero_secreto
+print ()
+
+#-------------------------------------------------------
+#Ejemplo 2 break
+print ("Ejemplo de sentencia break")
+valor_max = -999999999
+contador = 0
+while True: #mientras sea verdadero
+    num = int(input("Introduce un número o escribe -1 para finalizar el programa: "))
+    if num == -1: #si num es igual a -1
+        break #sale dle bucle
+    contador += 1 #si no, incrementa en 1
+    if num > valor_max: #si num es mayor que valor_max
+        valor_max = num
+
+if contador !=0: #si el contador es diferente de 0
+    print ("El número más grande es: ", valor_max) #imprime el valor máximo
+else: 
+    print ("No se ha ingresado ningún número") #sino, imprime el mensaje
+print ()
+
+#-------------------------------------------------------
+
+#Ejercicio con bucle while
+#Chupacabras
+print ("Ejemplo de chupacabras")
+word = input("Introduce la palabra secreta: ")
+while word != "chupacabra": #mientras word se diferente de chupacabra
+    print ("Palabra incorrecta...")
+    word = input("Introduce la palabra secreta: ")
+print ("¡Has dejado el ciclo con éxito!") #cuando word sea igual a chupacabras, imprime
+print ()
