@@ -49,11 +49,11 @@ print ()
 
 #Ejemplo if-else
 print ("Ejemplo de condición if-else")
-num1 = int(input("Ingrese el primer número: "))
+num1 = int(input("Ingrese el primer número: ")) 
 num2 = int(input("Ingrese el segundo número: "))
-if num1 > num2:
+if num1 > num2: #si el primer número es mayor que el segundo
     print ("El número", num1, "es mayor que", num2)
-else:
+else: #sino
     print ("El número", num2, "es mayor que", num1)
 print ()
 
@@ -79,8 +79,8 @@ print ("Ejemplo de función max() y min()")
 num1 = int(input("Ingrese el primer número: "))
 num2 = int(input("Ingrese el segundo número: "))
 num3 = int(input("Ingrese el tercer número: "))
-print ("El número mayor es: ", max(num1, num2, num3))
-print ("El número menor es: ", min(num1, num2, num3))
+print ("El número mayor es: ", max(num1, num2, num3)) #función max() para obtener el número mayor
+print ("El número menor es: ", min(num1, num2, num3)) #función min() para obtener el número menor
 print ()
 
 #--------------------------------------------------
@@ -104,7 +104,7 @@ else: #sino es ninguna de las anteriores
 ingreso = float(input("Introduce el ingreso anual: "))
 if ingreso < 85528: #si el ingreso es menor a 85528
     impuesto = (ingreso * 0.18) - 556.02 #calcula el impuesto 
-else:
+else: #sino
     impuesto = 14839.02 + ((ingreso - 85528)* 0.32) #calcula el impuesto
 if impuesto < 0: #si el impuesto es menor que 0
     impuesto = 0.0 #se le asigna el valor de 0
@@ -118,13 +118,13 @@ print ()
 #Ejercicio 3 if-elif-else
 #Año bisiesto
 año = int(input("Introduce un año: "))
-if año < 1582: #si el año es menor qu e1582
+if año < 1582: #si el año es menor que 1582 no está dentro del periodo del calendario gregoriano
     print ("NO esta dentro del periodo del calendario gregoriano")
-elif año % 4 != 0: #si el año no es divisible entre 4
+elif año % 4 != 0: #si el año no es divisible entre 4 es un año común
     print ("Es un año común")
-elif año % 100 != 0: #si el año no es divisible entre 100
+elif año % 100 != 0: #si el año no es divisible entre 100 es un año bisiesto
     print ("Es un año bisiesto")
-elif año % 400 != 0: #si el año no es divisible entre 400
+elif año % 400 != 0: #si el año no es divisible entre 400 es un año común 
     print ("Es un año común")
-else: #sino
+else: #si no cumple ninguna de las condiciones anteriores es un año bisiesto 
     print ("Es un año bisiesto")

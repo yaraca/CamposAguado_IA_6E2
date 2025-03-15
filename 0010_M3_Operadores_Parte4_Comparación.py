@@ -39,4 +39,4 @@ print ()
 #Ingresar un valor, imprimir False si es menor que 100, si es mayor o igual a 100 imprimir True
 print ("Ejercicio Operadores de comparación")
 x = int(input("Ingrese un valor: "))
-print (x >= 100, ", mayor o igual que 100")
+print (x >= 100, ", mayor o igual que 100") #compara si x es mayor o igual que 100
