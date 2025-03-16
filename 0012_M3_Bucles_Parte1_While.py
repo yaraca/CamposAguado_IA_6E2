@@ -103,3 +103,52 @@ while word != "chupacabra": #mientras word se diferente de chupacabra
     word = input("Introduce la palabra secreta: ")
 print ("¡Has dejado el ciclo con éxito!") #cuando word sea igual a chupacabras, imprime
 print ()
+
+#-------------------------------------------------------
+#While y el bloque else
+#El bloque else se ejecuta cuando la condición del bucle es falsa
+#Ejemplo de while y else
+print ("Ejemplo de while y else")
+i = 1
+while i < 4: #mientras i sea menor que 4
+    print ("Dentro del bucle...", i)
+    i += 1 #incrementa en 1
+else: #sino
+    print ("Fuera del bucle...") #cuando i sea mayor o igual a 4 el bucle se hace falso
+print ()
+
+#-------------------------------------------------------
+#Ejercicio con bucle while
+#Ejercicio Bloques de madera
+print ("Ejemplo de bloques de madera")
+bloques = int(input("Introduce el número de bloques:"))
+altura = 0
+contador = 1
+while contador <= bloques: #mientras contador sea menor o igual a bloques
+    altura += 1 #incrementa en 1
+    bloques -= contador #bloques es igual a bloques - contador
+    contador += 1 #incrementa en 1
+print ("La altura de la pirámide: ", altura) #imprime la altura de la pirámide
+print ()
+
+#-------------------------------------------------------
+
+#Ejercicio con bucle while
+#Ejercicio La hipótesis de Collatz
+print ("Ejemplo de hipótesis de Collatz")
+num = int(input("Introduce un número entero, que no sea negativo o cero: "))
+while num <= 0: #mientras num sea menor o igual a 0
+    num = int(input("Número inválido. Introduce un número entero positivo: "))
+c0 = num 
+pasos = 0
+while c0 != 1: #mientras c0 sea diferente de 1
+    if c0 % 2 == 0: #si el residuo de c0 entre 2 es igual a 0
+        c0 = c0 // 2 #c0 es igual a c0 entre 2
+    else:
+        c0 = 3 * c0 + 1 #sino, c0 es igual a 3 por c0 más 1
+    print (c0) #imprime c0
+    pasos +=1 #incrementa en 1
+print ("Pasos = ", pasos ) #imprime los pasos
+print ()
+
+
