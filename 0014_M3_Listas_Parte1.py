@@ -116,3 +116,50 @@ print ("Paso 4: ", beatles)
 beatles.insert(0, "Ringo Starr") #agregar a Ringo Starr en la posición 0
 print ("Paso 5: ", beatles)
 print()
+
+#-------------------------------------------------
+#Ordenar elementos de una lista
+#Ejemplo para ordenar elementos de una lista
+print ("Ordenar elementos de una lista")
+num = [ 8, 10, 6, 2, 4] #lista de números 
+print (num)
+swapped = True 
+while swapped: #mientras swapped sea verdadero
+    swapped = False #swapped es falso
+    for i in range(len(num) - 1): #ciclo for en rango de la longitud de la lista -1
+        if num[i] > num[i+1]: #si el elemento i es mayor al siguiente
+            swapped = True
+            num[i], num[i+1] = num[i+1], num[i] #intercambia los elementos 
+print (num)
+print()
+
+#-------------------------------------------------
+#Ordenamiento de burbuja 
+#Ejemplo de ordenamiento de burbuja
+print ("Ordenamiento de burbuja")
+lista = []
+swapped = True 
+num = int(input("¿Cuántos elementos desea ordenar?..."))
+for i in range(num): #ciclo for de la cantidad de elementos ingresados
+    valor = float(input("Ingrese un elemento de la lista: "))
+    lista.append(valor) #agregar los elementos a la lista
+
+while swapped: 
+    swapped = False
+    for i in range (len(lista) - 1): #ciclo for en rango de la longitud de la lista -1
+        if lista[i] > lista[i+1]: #si el elemento i es mayor que el siguiente
+            swapped = True #el cambio va a ser verdadero
+            lista[i], lista[i+1] = lista[i+1], lista[i] #intercambio de elementos 
+print ("Lista ordenada: ", lista)
+print()
+
+#-------------------------------------------------
+#Ordenar con sort()
+#Este método ordena los elementos de una lista de menor a mayor
+#Ejemplo de sort()
+print ("Ordenar con sort()")
+num = [8, 10, 6, 2, 4]
+print ("Lista original: ", num)
+num.sort() #ordena los elementos de la lista
+print ("Lista ordenada: ", num)
+print()
