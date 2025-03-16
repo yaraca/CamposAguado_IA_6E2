@@ -77,3 +77,15 @@ else:
     print ("Fin del programa")
 print ()
 
+#-------------------------------------------------------
+#For y bloque else
+#El bloque else se ejecuta cuando el bucle termina de iterar sobre la lista
+#Ejemplo de bloque else
+print ("Ejemplo de bloque else")
+for i in range (5): #para i en el rango de 0 a 4
+    print (i) #imprime el valor de i
+else: #cuando termina el bucle
+    print ("Fin del programa...")
+print ()
+
+
